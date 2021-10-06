@@ -1,0 +1,45 @@
+:root {
+  --color1: #258119;
+  --color2: #790e25;
+}
+* {
+  font-family: "Montserrat", sans-serif;
+}
+nav ul li a {
+  font-weight: 700;
+  font-size: 14px;
+}
+.btn_bc {
+  border-radius: 25px;
+}
+.inside_block1 {
+  width: 100%;
+  height: 819px;
+  background-image: url(../img/header_img.svg);
+  background-size: cover;
+}
+.inside_block2 {
+  width: 100%;
+  height: 819px;
+  background-image: url(../img/man-bg.svg);
+  background-size: cover;
+}
+.block {
+  background: #0b071d;
+  position: relative;
+}
+.grad {
+  width: 100%;
+  height: 264px;
+}
+.grad-top {
+    position: absolute;
+    top: 0;
+    background: linear-gradient(
+        180deg, #0B071D 0%, rgba(11, 7, 29, 0) 100%);
+}
+.grad-bottom {
+  background: linear-gradient(2deg, #0b071d 0%, rgba(11, 7, 29, 0) 100%);
+  position: absolute;
+  bottom: 0;
+}
