@@ -342,37 +342,63 @@ font-size: 56px;
 .whatget-text-row .whatget-item:first-child{
   text-align: right;
 }
-/* section 3 */
-.mentor-content{
+/* section 3  Mentor*/
 
+section.mentor{
+  top: -4px;
+  height: 959px;
 }
+.mentor .container {
+  height: inherit;
+}
+
+.mentor .block-title{
+  top: 80px;
+}
+.mentor-content{
+  width: 83%;
+  position: relative;
+  margin: 0 auto;
+  top: 70px;
+  left: 40px;
+  height: 650px;
+}
+
 .mentor-photo{
     position: absolute;
-    top: 19%;
-    left: 30%;
+    left: 0;
+    height: 74%;
 }
 .mentor-photo img {
-    position: static;
-    width: 100%;
+    max-width: 100%;
     height: 100%;
-    margin-top: 30px;
-    top: 18%;
-    left: 50%;
-    transform: translateX(-50%);
 }
 .mentor-info{
-    width: 630px;
-    position: absolute;
-    height: 515px;
-    color: white;
-    top: 30%;
-    left: 46%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  width: 58%;
+  min-width: 460px;
+  position: absolute;
+  height: 70%;
+  color: white;
+  top: 32px;
+  left: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
+.mentor-text{
+    background: #2a2739c4;
+    height: 85%;
+    padding: 50px;
+}
+
 .metor-info p {
-    font-size: 20px;
+  font-size: 20px;
+  font-weight: 100;
+}
+.mentor-text h2{
+    color: #00cda8;
+    margin-bottom: 45px;
+    margin-top: 28px;
 }
 
 .mentor-nav{
@@ -381,18 +407,8 @@ font-size: 56px;
     margin-top: 25px;
     align-items: center;
 }
-.mentor-text{
-    background: #2a2739c4;
-    height: 430px;
-    padding: 50px;
-}
-.mentor-text h2{
-    color: #00cda8;
-    margin-bottom: 45px;
-    margin-top: 28px;
-}
 .mentor-btn{
-    margin-left: 162px;
+    margin-left: 120px;
 }
 .mentor-btn button{
     background: none;
@@ -401,6 +417,9 @@ font-size: 56px;
     font-weight: 600;
     color: #3d3d3d;
     margin-right: 30px;
+}
+.mentor-str{
+  margin-right: 10px;
 }
 .mentor-str button {
     background: none;

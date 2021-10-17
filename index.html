@@ -57,6 +57,14 @@
         .whatget-text{
           height: 465px;
         }
+        .mentor-text{
+          padding: 40px;
+          height: 100%;
+        }
+        .mentor-info{
+          top: 50px;
+        }
+
       }
       @media (max-width: 992px) {
         .container {
@@ -109,6 +117,21 @@
         .whatget-text{
           top: 326px;
           height: 431px;
+        }
+        .mentor-content{
+          width: 100%;
+        }
+        .mentor-info{
+          top: 190px;
+          left: 35%;
+          min-width: 440px;
+        }
+        .mentor-text{
+          padding: 30px;
+        }
+        .mentor-text p {
+          font-weight: 200;
+          font-size: 20px;
         }
       }
 
@@ -202,6 +225,35 @@
         }
         .block-title{
           width: 100%;
+        }
+        section.mentor{
+          height: 1033px;
+        }
+        .mentor-content{
+          display: flex;
+          flex-direction: column;
+          height: 780px;
+          position: relative;
+        }
+        .mentor-photo{
+          width: 60%;
+          left: 9%;
+          position: relative;
+        }
+        .mentor-info{
+          position: relative;
+          left: 15%;
+          width: 75%;
+          top: -69px;
+        }
+        .mentor-text h2 {
+          margin-top: 10px;
+        }
+        .mentor-btn{
+          left: 0;
+        }
+        .mentor-str button{
+          margin-left: 10px;
         }
       }
       @media (max-width: 600px) {
@@ -440,65 +492,67 @@
         </div>
       </div>
     </section>
-    <section class="whatget" id="mentor">
-      <div class="block-title">
-        <h1>Менторы BRI Club</h1>
-        <div class="bgtitle">03</div>
-      </div>
-      <div class="whatget-content mentor-content">
-        <div class="mentor-photo">
-          <img src="/img/mentor1.png" alt="" />
+    <section class="mentor" id="mentor">
+      <div class="container">
+        <div class="block-title">
+          <h1>Менторы BRI Club</h1>
+          <div class="bgtitle">03</div>
         </div>
-        <div class="mentor-info">
-          <div class="mentor-text">
-            <h2>Саидмурод Давлатов</h2>
-            <p>
-              Известный бизнес-тренер, бизнесмен, доктор психологических наук,
-              основатель и президент Международного центра развития человека
-              «САМО», автор серии книг «Философия муравья».
-            </p>
+        <div class=" mentor-content">
+          <div class="mentor-photo">
+            <img src="/img/mentor1.png" alt="" />
           </div>
-          <div class="mentor-nav">
-            <div class="mentor-btn">
-              <button>1</button>
-              <button>2</button>
-              <button>3</button>
+          <div class="mentor-info">
+            <div class="mentor-text">
+              <h2>Саидмурод Давлатов</h2>
+              <p>
+                Известный бизнес-тренер, бизнесмен, доктор психологических наук,
+                основатель и президент Международного центра развития человека
+                «САМО», автор серии книг «Философия муравья».
+              </p>
             </div>
-            <div class="mentor-str">
-              <button>
-                <svg
-                  style="width: 25px; height: 25px"
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M10 19l-7-7m0 0l7-7m-7 7h18"
-                  />
-                </svg>
-              </button>
-              <button>
-                <svg
-                  style="width: 25px; height: 25px"
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M14 5l7 7m0 0l-7 7m7-7H3"
-                  />
-                </svg>
-              </button>
+            <div class="mentor-nav">
+              <div class="mentor-btn">
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+              </div>
+              <div class="mentor-str">
+                <button>
+                  <svg
+                    style="width: 25px; height: 25px"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M10 19l-7-7m0 0l7-7m-7 7h18"
+                    />
+                  </svg>
+                </button>
+                <button>
+                  <svg
+                    style="width: 25px; height: 25px"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M14 5l7 7m0 0l-7 7m7-7H3"
+                    />
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
         </div>
