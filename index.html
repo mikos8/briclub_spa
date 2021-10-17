@@ -1,98 +1,312 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet" />
-  <link href="./css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-  <link rel="stylesheet" href="./css/style.css" />
-  <title>Document</title>
-</head>
-<body>
-  <header id="header" class="fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <a href="" class="navbar-brand">
-          brand
-          <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&family=PT+Serif:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="./css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>BRI CLUB</title>
+  </head>
+  <body>
+    <header id="header" class="bg">
+      <nav class="">
+        <a href="#" class="logo-link" style="margin-left: 4px">
+          <div class="logo-nav">
+            <div>
+              <img src="./img/logo.svg" />
+            </div>
+            <div class="logo-title">
+              <div>BRI</div>
+              <div>CLUB</div>
+            </div>
+          </div>
         </a>
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navContent"
-          aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="justify-content-center collapse navbar-collapse" id="navContent">
-          <ul class="navbar-nav mr-auto mb-3 mb-lg-0">
-            <li class="nav-item">
-              <a href="#" class="nav-link active">ГЛАВНАЯ</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">О BRI CLUB</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">ЧТО ДАЕТ</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">МЕНТОРЫ</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">МЕРОПРИЯТИЯ</a>
-            </li>
-          </ul>
-        </div>
-        <a class="btn btn-outline-success me-2 btn_bc" type="button">
-          ВСТУПИТЬ <svg xmlns="http://www.w3.org/2000/svg" style="width: 20px;" class="h-3 w-3" fill="none"
-            viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+
+        <ul class="menu-dsc">
+          <li class="">
+            <a href="#home" class="">ГЛАВНАЯ</a>
+          </li>
+          <li class="">
+            <a href="#club" class="">О BRI CLUB</a>
+          </li>
+          <li class="">
+            <a href="#whatget" class="">ЧТО ДАЕТ</a>
+          </li>
+          <li class="">
+            <a href="#" class="">МЕНТОРЫ</a>
+          </li>
+          <li class="">
+            <a href="#" class="">МЕРОПРИЯТИЯ</a>
+          </li>
+        </ul>
+
+        <a class="s-btn" type="button">
+          ВСТУПИТЬ
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            style="width: 20px"
+            class="h-3 w-3"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M14 5l7 7m0 0l-7 7m7-7H3"
+            />
           </svg>
         </a>
-      </div>
-    </nav>
-  </header>
-  <section class=" block">
-    <div class="row">
-      <div class="inside_block1">
-        <div class="grad grad-top"></div>
-        <div class="container">
-          <div class="welcome-title align-items-center">
-            <img src="./img/logo.svg" alt="logo"><br>
-            <img src="./img/BRI Club.svg" alt="logo">
-            <p>Вступайте в BRI Club!
-              Попадите в окружение успешных людей и выстройте свою личную финансовую стратегию.</p>
-            <a href="#" class="btn btn-outline-success me-2 btn_bc">ВСТУПИТЬ</a>
+      </nav>
+    </header>
+    <section class="home" id="home">
+      <div class="bgimg">
+        <div class="">
+          <div class="top-gradient"></div>
+          <div class="btm-gradient"></div>
+          <img
+            src="./img/logo.svg"
+            alt=""
+            class="position-absolute img-top-center"
+          />
+          <div class="s-text">
+            <p class="">Вступайте в BRI Club!</p>
+            <p class="">
+              Попадите в окружение успешных людей и выстройте свою личную
+              финансовую стратегию.
+            </p>
+            <a class="s-btn btn-home" type="button">
+              ВСТУПИТЬ
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                style="width: 20px"
+                class="h-3 w-3"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M14 5l7 7m0 0l-7 7m7-7H3"
+                />
+              </svg>
+            </a>
           </div>
         </div>
-        <div class="grad grad-bottom"></div>
       </div>
-    </div>
-  </section>
-  <section class=" block">
-    <div class="row">
-      <div class="inside_block2">
-        <div class="grad grad-top"></div>
-        <div class="container">
+    </section>
+    <section class="club" id="club">
+      <div class="bgimg club">
+        <div class="">
+          <div class="top-gradient"></div>
+          <div class="btm-gradient"></div>
 
+          <div class="club-content">
+            <div class="club-title">
+              <div class="club-title-item">
+                <h1>О BRI Club</h1>
+                <div class="club-bgtitle">01</div>
+              </div>
+              <p>
+                Мы BRI Club - закрытое бизнес-сообщество, которое объединяет
+                предпринимателей и бизнесменов через взаимную поддержку в
+                бизнесе и жизни.
+              </p>
+              <p>
+                Сообщество BRI Club улучшает окружающий мир, повышая качество
+                Вашей жизни.
+              </p>
+            </div>
+            <div class="club-statistic">
+              <div class="statistic-top">
+                <div class="club-item">
+                  <h1>45+</h1>
+                  <p>участников</p>
+                  <p>клуба</p>
+                </div>
+                <div class="club-item">
+                  <h1>32+</h1>
+                  <p>участников</p>
+                  <p>клуба</p>
+                </div>
+              </div>
+              <div class="statistic-top statbottom">
+                <div class="club-item">
+                  <h1>80%</h1>
+                  <p>участников</p>
+                  <p>клуба</p>
+                </div>
+                <div class="club-item">
+                  <h1>50+</h1>
+                  <p>участников</p>
+                  <p>клуба</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="grad grad-bottom"></div>
       </div>
-    </div>
-  </section>
-  <section class="whatgetclub block ">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <h2 class="text-center mb-5 mt-3">Что дает BRI Club?</h2>
+    </section>
+    <section class="whatget" id="whatget">
+      <div class="block-title">
+        <h1>Что дает BRI Club?</h1>
+        <div class="bgtitle">02</div>
+      </div>
+      <div class="whatget-content">
+        <img src="/img/hexagon2.png" alt="" />
+        <div class="whatget-text">
+          <div class="whatget-text-row">
+            <div class="whatget-item">Физическое здоровье</div>
+            <div class="whatget-item">Достойное окружение</div>
+          </div>
+          <div class="whatget-text-row">
+            <div class="whatget-item">Финансовую стабильность</div>
+            <div class="whatget-item">Высокое саморазвитие</div>
+          </div>
+          <div class="whatget-text-row">
+            <div class="whatget-item">Разносторонний нетворкинг</div>
+            <div class="whatget-item">Альтруизм и филантропию</div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  <br />
-  <footer id="footer"></footer>
+    </section>
+    <section class="whatget" id="mentor">
+      <div class="block-title">
+        <h1>Менторы BRI Club</h1>
+        <div class="bgtitle">03</div>
+      </div>
+      <div class="whatget-content mentor-content">
+        <div class="mentor-photo">
+          <img src="/img/mentor1.png" alt="" />
+        </div>
+        <div class="mentor-info"> 
+          <div class="mentor-text">
+            <h2>Саидмурод Давлатов</h2>
+            <p>
+              Известный бизнес-тренер, бизнесмен, доктор психологических наук, основатель и президент Международного центра развития человека «САМО», автор серии книг «Философия муравья».
+            </p>
+          </div>
+          <div class="mentor-nav">
+            <div class="mentor-btn">
+              <button>1</button>
+              <button>2</button>
+              <button>3</button>
+            </div>
+            <div class="mentor-str">
+              <button>
+                <svg style="width: 25px;height:25px" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                </svg>
+              </button>
+              <button>
+                <svg style="width: 25px;height:25px" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="event" id="event">
+      <div class="block-title">
+        <h1>Мероприятия BRI Club</h1>
+        <div class="bgtitle">04</div>
+      </div>
+      <div class="block-event">
+        <div class="event-title">
+          <p>Здесь собраны фотографии событий нашего клуба:
+            бизнес-завтраки, итоговые слеты, путешествия и инфо-туры</p>
+        </div>
+        <div class="event-photo">
+          <div class="pre">
 
-  <script src="./js/bootstrap.bundle.min.js"></script>
-</body>
+          </div> 
+          <div class="current">
+            <button><</button>
+            <button>></button>
+          </div> 
+          <div class="next">
+
+          </div> 
+        </div>
+      </div>
+    </section>
+    <section class="forma" id="forma">
+      <div class="block-title">
+        <h1>Оставьте заявку</h1>
+        <div class="bgtitle">05</div>
+      </div>
+      <div class="block-form">
+        <div class="form-content">
+          <p>Вы в одном шаге от успеха</p>
+          <div class="form-in">
+            <input type="text" placeholder="Имя Фамилия*" />
+            <input type="text" placeholder="Ваш телефон*" />
+            <input type="text" placeholder="Ваш E-mail" />
+           <div class="iagree">
+            <input type="checkbox" checked/>
+            Я согласен(a) на обработку персональных данных
+           </div>
+           <a class="s-btn btn-home" type="button">
+            ОТПРАВИТЬ
+          </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg">
+      <div class="fttext">
+       <pre>
+        © BRI Сlub
+        Все права защищены.
+       </pre> 
+      </div> 
+      <a href="#" class="logo-link" style="margin-left: 4px">
+        <div class="logo-nav">
+          <div>
+            <img src="./img/logo.svg" />
+          </div>
+          <div class="logo-title">
+            <div>BRI</div>
+            <div>CLUB</div>
+          </div>
+        </div>
+      </a>
+      <div class="social-link">
+        <a href="#">
+          <img src="/img/social-intagram.png" alt="">
+        </a>
+        <a href="#">
+          <img src="/img/social-facebook.png" alt="" style="    background: none;
+          border-radius: 48px;">
+        </a>
+      </div>
+    </footer>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
