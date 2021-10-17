@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap");
+
+
 :root {
   --color1: #258119;
   --color2: #790e25;
@@ -46,6 +48,14 @@ p {
   line-height: 32px;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 0px 20px;
+}
+.burger{
+  display: none;
+}
 .menu-dsc {
   display: flex;
 }
@@ -151,7 +161,7 @@ nav ul li a {
   height: 29%;
   position: absolute;
   z-index: 1;
-  top: 0;
+  top: -4px;
 }
 .club.top-gradient {
   height: 9%;
@@ -180,12 +190,14 @@ nav ul li a {
     color: white;
     font-family: Montserrat;
 }
-
+.club .top-gradient{
+  top: -2px;
+}
 .club-title {
-    width: 26%;
-    top: 100px;
-    left: 79px;
-    position: relative;
+  width: 41%;
+  top: 100px;
+  left: 79px;
+  position: relative;
 }
 .club-title h1 {
   color: #00cda8;
@@ -218,10 +230,11 @@ font-size: 56px;
 
 
 .club-statistic {
-    display: flex;
-    margin-top: -66px;
-    /* margin-left: -166px; */
-    flex-direction: column;
+  display: flex;
+  margin-top: -66px;
+  flex-direction: column;
+  width: 40%;
+  margin-left: 75px;
 }
 .club-item {
     margin-right: 76px;
@@ -233,9 +246,14 @@ font-size: 56px;
   line-height: 18px;
 }
 .club-item h1 {
+  display: flex;
+  align-items: center;
     font-size: 110px;
     color: #00cda8;
     font-weight: 600;
+}
+.club-item span{
+  font-size:60px;
 }
 .statistic-top {
   display: flex;
@@ -247,14 +265,24 @@ font-size: 56px;
 /* section what get */
 .whatget {
   padding-bottom: 90px;
+  top: -2px;
 }
-
+.whatget-diagram{
+  width: 75%;
+  position: relative;
+  top: 173px;
+  margin: 0 auto;
+}
+.whatget-diagram img{
+  max-width: 100%;
+}
 .block-title {
     top: 150px;
     position: relative;
-    width: 40%;
+    width: 60%;
     margin: 0 auto 116px;
     text-align: center;
+    min-width: 300px;
 }
 .block-title h1 {
   font-size: 54px;
@@ -284,30 +312,20 @@ font-size: 56px;
     position: relative;
     margin: 0 auto;
 }
-.whatget-content img {
-    width: 55%;
-    height: 75%;
-    margin-top: 30px;
-    position: absolute;
-    object-fit: contain;
-    top: 18%;
-    left: 50%;
-    transform: translateX(-50%);
-}
 
 .whatget-text{
-    margin-top: 30px;
-    position: absolute;
-    top: 18%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 597px;
+  margin-top: 30px;
+  position: absolute;
+  top: 319px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 512px;
 }
 .whatget-text-row{
     margin: 0 auto;
-    width: 86%;
+    width: 90%;
     display: flex;
     justify-content: space-between;
 }
@@ -315,11 +333,15 @@ font-size: 56px;
     width: 200px;
     height: 70px;
     font-size: 24px;
+    font-weight: 200;
     text-align: center;
     line-height: 30px;
     color: white;
+    text-align: left;
 }
-
+.whatget-text-row .whatget-item:first-child{
+  text-align: right;
+}
 /* section 3 */
 .mentor-content{
 
@@ -390,22 +412,25 @@ font-size: 56px;
 }
 /* event ------------------------*/
 section.event{
-    height:900px;
+    height:940px;
 }
 .block-event{
     position: absolute;
     display: flex;
     flex-direction: column;
     width: 100%;
+    top: 240px;
 }
 .event-photo{
     height: 500px;
     width: 100%;
-    border: 1px solid blue;
     display: flex;
     position: relative;
     justify-content: space-between;
     align-items: center;
+}
+.event-photo img {
+  border-radius: 5px;
 }
 .event-title{
     color: #fff;
@@ -414,7 +439,6 @@ section.event{
     width: 38%;
     min-width: 300px;
     margin: 70px auto 30px;
-    border: 1px solid red;
 }
 .event-title p {
     font-size: 16px;
@@ -423,19 +447,37 @@ section.event{
 .pre, .next{
     width: 20%;
     height: 75%;
-    border: 1px solid green;
     overflow: hidden;
+    position: relative;
 }
+.pre img, .next img{
+  position: absolute;
+  opacity: 0.4;
+}
+.pre img{
+  top: 0;
+  right: 0;
+}
+.next img{
+  top: 0;
+  left: 0;
+}
+
 .current{
     width: 50%;
     height: 95%;
-    border: 1px solid red;
     position: relative;
+    overflow: hidden;
 }
-.current button {
+.current img{
+  position: absolute;
+    width: 100%;
+    filter: brightness(135%);
+}
+.event-photo button {
   position: absolute;
   top: 50%;
-  right: -75px;
+  right: 16%;
   background: none;
     border: 2px solid #006C64;
     width: 56px;
@@ -443,9 +485,13 @@ section.event{
     border-radius: 28px;
     color: #fff;
 }
-.current button:first-child{
-  left: -75px;
+.event-photo button:first-child{
+  left: 75px;
 }
+.event-photo button.first{
+  left: 16%;
+}
+
 /* forma ---------------------------*/
 section.forma {
     height: 900px;

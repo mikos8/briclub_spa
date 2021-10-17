@@ -26,60 +26,302 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <style>
+      @media (max-width: 1200px) {
+        .container {
+          max-width: 970px;
+        }
+        .block-title h1 {
+          font-size: 52px;
+        }
+        .bgtitle {
+          font-size: 200px;
+          top: -117px;
+        }
+        .club-content {
+          left: 15px;
+          transform: none;
+        }
+        .club-title {
+          left: none;
+        }
+        .club-item {
+          margin-right: 55px;
+        }
+        .club-item h1 {
+          font-size: 100px;
+        }
+        .whatget-text-row {
+          width: 98%;
+        }
+        .whatget-text{
+          height: 465px;
+        }
+      }
+      @media (max-width: 992px) {
+        .container {
+          max-width: 750px;
+        }
+        .menu-dsc {
+          display: none;
+        }
+        .burger {
+          display: block;
+        }
+        .block-title {
+          top: 115px;
+        }
+        .block-title h1 {
+          font-size: 48px;
+        }
+        .bgtitle {
+          font-size: 180px;
+          top: -117px;
+        }
+
+        .club-content {
+          left: 0px;
+          transform: none;
+        }
+        .club-statistic {
+          margin-left: 107px;
+          margin-top: -25px;
+        }
+
+        .club-title {
+          left: 40px;
+        }
+        .club-item {
+          margin-right: 70px;
+        }
+        .club-item h1 {
+          font-size: 88px;
+        }
+        .whatget-content{
+          width: 70%;
+        }
+        .whatget-item{
+          font-size: 18px;
+        }
+        .whatget-text-row {
+          width: 100%;
+        }
+        .whatget-text{
+          top: 326px;
+          height: 431px;
+        }
+      }
+
+
+      @media (max-width: 850px) {
+        .club-content {
+          flex-direction: column;
+          margin: 0 auto;
+          height: fit-content;
+          position: relative;
+          z-index: 1;
+        }
+        .club-bgtitle {
+          font-size: 180px;
+          top: -108px;
+          left: 42%;
+        }
+        .club-title-item h1 {
+          font-size: 48px;
+        }
+        .club-statistic {
+          width: 100%;
+          position: relative;
+          top: 225px;
+          margin: 0 auto;
+          z-index: 1;
+        }
+        .statistic-top {
+          width: 100%;
+          justify-content: space-around;
+        }
+        .club-title {
+          width: 100%;
+          top: 221px;
+        }
+        section.whatget{
+          height: 777px;
+        }
+        .whatget-text{
+          top: 300px;
+          height: 390px;
+        }
+        .whatget-item{
+          font-size: 16px;
+          max-width: 180px;
+        }
+      }
+      @media (max-width: 767px) {
+        .container {
+          max-width: none;
+        }
+        block-title {
+          top: 80px;
+          width: 70%;
+        }
+        .s-text {
+          width: 320px;
+        }
+        .block-title {
+          top: 80px;
+        }
+        .block-title h1 {
+          font-size: 40px;
+        }
+        .bgtitle {
+          font-size: 160px;
+          top: -97px;
+        }
+        .club-content {
+          width: 100%;
+        }
+        .club-title {
+          left: 0;
+          top: 155px;
+          padding: 0 10px 10px 10px;
+        }
+        .club-statistic {
+          top: 165px;
+        }
+
+        .whatget-diagram{
+          width: 90%;
+          top: 100px;
+        }
+        .whatget-item{
+          line-height: 18px;
+        }
+        .whatget-text{
+          top: 197px;
+          height: 350px;
+        }
+        .block-title{
+          width: 100%;
+        }
+      }
+      @media (max-width: 600px) {
+        .whatget-diagram img{
+          opacity: 0.5;
+        }
+      }
+      @media (max-width: 488px) {
+        .block-title {
+          top: 70px;
+          width: 85%;
+        }
+        .club-item h1 {
+          font-size: 70px;
+        }
+        .club-item {
+          margin: 0px;
+        }
+      }
+      @media (max-width: 400px) {
+        .club-item h1 {
+          font-size: 56px;
+        }
+        .club-title-item h1 {
+          font-size: 40px;
+        }
+        .bgtitle {
+          display: none;
+        }
+        .club-bgtitle {
+          display: none;
+        }
+        .club-title {
+          top: 103px;
+        }
+        .club-title-item {
+          top: -105px;
+        }
+        .whatget-text-row .whatget-item{
+    text-align: right;
+    padding-right: 10px;
+        }
+        .whatget-text-row .whatget-item:first-child {
+    text-align: left;
+    padding-left: 10px;
+    }
+      }
+    </style>
     <title>BRI CLUB</title>
   </head>
   <body>
     <header id="header" class="bg">
-      <nav class="">
-        <a href="#" class="logo-link" style="margin-left: 4px">
-          <div class="logo-nav">
-            <div>
-              <img src="./img/logo.svg" />
+      <div class="container">
+        <nav class="">
+          <a href="#" class="logo-link" style="margin-left: 4px">
+            <div class="logo-nav">
+              <div>
+                <img src="./img/logo.svg" />
+              </div>
+              <div class="logo-title">
+                <div>BRI</div>
+                <div>CLUB</div>
+              </div>
             </div>
-            <div class="logo-title">
-              <div>BRI</div>
-              <div>CLUB</div>
-            </div>
+          </a>
+          <div class="burger">
+            <svg
+              style="width: 35px; height: 35px"
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
           </div>
-        </a>
+          <ul class="menu-dsc">
+            <li class="">
+              <a href="#home" class="">ГЛАВНАЯ</a>
+            </li>
+            <li class="">
+              <a href="#club" class="">О BRI CLUB</a>
+            </li>
+            <li class="">
+              <a href="#whatget" class="">ЧТО ДАЕТ</a>
+            </li>
+            <li class="">
+              <a href="#" class="">МЕНТОРЫ</a>
+            </li>
+            <li class="">
+              <a href="#" class="">МЕРОПРИЯТИЯ</a>
+            </li>
+          </ul>
 
-        <ul class="menu-dsc">
-          <li class="">
-            <a href="#home" class="">ГЛАВНАЯ</a>
-          </li>
-          <li class="">
-            <a href="#club" class="">О BRI CLUB</a>
-          </li>
-          <li class="">
-            <a href="#whatget" class="">ЧТО ДАЕТ</a>
-          </li>
-          <li class="">
-            <a href="#" class="">МЕНТОРЫ</a>
-          </li>
-          <li class="">
-            <a href="#" class="">МЕРОПРИЯТИЯ</a>
-          </li>
-        </ul>
-
-        <a class="s-btn" type="button">
-          ВСТУПИТЬ
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            style="width: 20px"
-            class="h-3 w-3"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M14 5l7 7m0 0l-7 7m7-7H3"
-            />
-          </svg>
-        </a>
-      </nav>
+          <a class="s-btn" type="button">
+            ВСТУПИТЬ
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              style="width: 20px"
+              class="h-3 w-3"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M14 5l7 7m0 0l-7 7m7-7H3"
+              />
+            </svg>
+          </a>
+        </nav>
+      </div>
     </header>
     <section class="home" id="home">
       <div class="bgimg">
@@ -125,45 +367,47 @@
           <div class="top-gradient"></div>
           <div class="btm-gradient"></div>
 
-          <div class="club-content">
-            <div class="club-title">
-              <div class="club-title-item">
-                <h1>О BRI Club</h1>
-                <div class="club-bgtitle">01</div>
+          <div class="container">
+            <div class="club-content">
+              <div class="club-title">
+                <div class="club-title-item">
+                  <h1>О BRI Club</h1>
+                  <div class="club-bgtitle">01</div>
+                </div>
+                <p>
+                  Мы BRI Club - закрытое бизнес-сообщество, которое объединяет
+                  предпринимателей и бизнесменов через взаимную поддержку в
+                  бизнесе и жизни.
+                </p>
+                <p>
+                  Сообщество BRI Club улучшает окружающий мир, повышая качество
+                  Вашей жизни.
+                </p>
               </div>
-              <p>
-                Мы BRI Club - закрытое бизнес-сообщество, которое объединяет
-                предпринимателей и бизнесменов через взаимную поддержку в
-                бизнесе и жизни.
-              </p>
-              <p>
-                Сообщество BRI Club улучшает окружающий мир, повышая качество
-                Вашей жизни.
-              </p>
-            </div>
-            <div class="club-statistic">
-              <div class="statistic-top">
-                <div class="club-item">
-                  <h1>45+</h1>
-                  <p>участников</p>
-                  <p>клуба</p>
+              <div class="club-statistic">
+                <div class="statistic-top">
+                  <div class="club-item">
+                    <h1>45 <span> +</span></h1>
+                    <p>участников</p>
+                    <p>клуба</p>
+                  </div>
+                  <div class="club-item">
+                    <h1>32 <span> +</span></h1>
+                    <p>участников</p>
+                    <p>клуба</p>
+                  </div>
                 </div>
-                <div class="club-item">
-                  <h1>32+</h1>
-                  <p>участников</p>
-                  <p>клуба</p>
-                </div>
-              </div>
-              <div class="statistic-top statbottom">
-                <div class="club-item">
-                  <h1>80%</h1>
-                  <p>участников</p>
-                  <p>клуба</p>
-                </div>
-                <div class="club-item">
-                  <h1>50+</h1>
-                  <p>участников</p>
-                  <p>клуба</p>
+                <div class="statistic-top statbottom">
+                  <div class="club-item">
+                    <h1>80 <span> %</span></h1>
+                    <p>участников</p>
+                    <p>клуба</p>
+                  </div>
+                  <div class="club-item">
+                    <h1>50 <span> +</span></h1>
+                    <p>участников</p>
+                    <p>клуба</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -177,20 +421,22 @@
         <div class="bgtitle">02</div>
       </div>
       <div class="whatget-content">
-        <img src="/img/hexagon2.png" alt="" />
-        <div class="whatget-text">
-          <div class="whatget-text-row">
-            <div class="whatget-item">Физическое здоровье</div>
-            <div class="whatget-item">Достойное окружение</div>
-          </div>
-          <div class="whatget-text-row">
-            <div class="whatget-item">Финансовую стабильность</div>
-            <div class="whatget-item">Высокое саморазвитие</div>
-          </div>
-          <div class="whatget-text-row">
-            <div class="whatget-item">Разносторонний нетворкинг</div>
-            <div class="whatget-item">Альтруизм и филантропию</div>
-          </div>
+        <div class="whatget-diagram">
+          <img src="/img/hexagon2.png" alt="" />
+        </div>
+      </div>
+      <div class="whatget-text">
+        <div class="whatget-text-row">
+          <div class="whatget-item">Физическое здоровье</div>
+          <div class="whatget-item">Достойное окружение</div>
+        </div>
+        <div class="whatget-text-row">
+          <div class="whatget-item">Финансовую стабильность</div>
+          <div class="whatget-item">Высокое саморазвитие</div>
+        </div>
+        <div class="whatget-text-row">
+          <div class="whatget-item">Разносторонний нетворкинг</div>
+          <div class="whatget-item">Альтруизм и филантропию</div>
         </div>
       </div>
     </section>
@@ -203,11 +449,13 @@
         <div class="mentor-photo">
           <img src="/img/mentor1.png" alt="" />
         </div>
-        <div class="mentor-info"> 
+        <div class="mentor-info">
           <div class="mentor-text">
             <h2>Саидмурод Давлатов</h2>
             <p>
-              Известный бизнес-тренер, бизнесмен, доктор психологических наук, основатель и президент Международного центра развития человека «САМО», автор серии книг «Философия муравья».
+              Известный бизнес-тренер, бизнесмен, доктор психологических наук,
+              основатель и президент Международного центра развития человека
+              «САМО», автор серии книг «Философия муравья».
             </p>
           </div>
           <div class="mentor-nav">
@@ -218,13 +466,37 @@
             </div>
             <div class="mentor-str">
               <button>
-                <svg style="width: 25px;height:25px" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                <svg
+                  style="width: 25px; height: 25px"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10 19l-7-7m0 0l7-7m-7 7h18"
+                  />
                 </svg>
               </button>
               <button>
-                <svg style="width: 25px;height:25px" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                <svg
+                  style="width: 25px; height: 25px"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M14 5l7 7m0 0l-7 7m7-7H3"
+                  />
                 </svg>
               </button>
             </div>
@@ -239,20 +511,23 @@
       </div>
       <div class="block-event">
         <div class="event-title">
-          <p>Здесь собраны фотографии событий нашего клуба:
-            бизнес-завтраки, итоговые слеты, путешествия и инфо-туры</p>
+          <p>
+            Здесь собраны фотографии событий нашего клуба: бизнес-завтраки,
+            итоговые слеты, путешествия и инфо-туры
+          </p>
         </div>
         <div class="event-photo">
           <div class="pre">
-
-          </div> 
+            <img src="/img/event-photo1.png" alt="" />
+          </div>
           <div class="current">
-            <button><</button>
-            <button>></button>
-          </div> 
+            <img src="/img/event-photo1.png" alt="" />
+          </div>
           <div class="next">
-
-          </div> 
+            <img src="/img/event-photo1.png" alt="" />
+          </div>
+          <button class="first"><</button>
+          <button class="">></button>
         </div>
       </div>
     </section>
@@ -268,24 +543,23 @@
             <input type="text" placeholder="Имя Фамилия*" />
             <input type="text" placeholder="Ваш телефон*" />
             <input type="text" placeholder="Ваш E-mail" />
-           <div class="iagree">
-            <input type="checkbox" checked/>
-            Я согласен(a) на обработку персональных данных
-           </div>
-           <a class="s-btn btn-home" type="button">
-            ОТПРАВИТЬ
-          </a>
+            <div class="iagree">
+              <input type="checkbox" checked />
+              Я согласен(a) на обработку персональных данных
+            </div>
+            <a class="s-btn btn-home" type="button"> ОТПРАВИТЬ </a>
           </div>
         </div>
       </div>
     </section>
     <footer class="bg">
       <div class="fttext">
-       <pre>
+        <pre>
         © BRI Сlub
         Все права защищены.
-       </pre> 
-      </div> 
+       </pre
+        >
+      </div>
       <a href="#" class="logo-link" style="margin-left: 4px">
         <div class="logo-nav">
           <div>
@@ -299,11 +573,14 @@
       </a>
       <div class="social-link">
         <a href="#">
-          <img src="/img/social-intagram.png" alt="">
+          <img src="/img/social-intagram.png" alt="" />
         </a>
         <a href="#">
-          <img src="/img/social-facebook.png" alt="" style="    background: none;
-          border-radius: 48px;">
+          <img
+            src="/img/social-facebook.png"
+            alt=""
+            style="background: none; border-radius: 48px"
+          />
         </a>
       </div>
     </footer>
