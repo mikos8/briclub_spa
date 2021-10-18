@@ -432,6 +432,7 @@ section.mentor{
 /* event ------------------------*/
 section.event{
     height:940px;
+    top: -5px;
 }
 .block-event{
     position: absolute;
@@ -514,6 +515,7 @@ section.event{
 /* forma ---------------------------*/
 section.forma {
     height: 900px;
+    top: -8px;
 }
 
 .block-form{
@@ -534,8 +536,10 @@ section.forma {
     height: 38px;
     width: 44%;
     margin: 10px auto;
-    min-width: 340px;
     color: #fff;
+}
+.inpformin{
+  min-width: 320px;
 }
 .form-content{
     justify-content: space-between;
@@ -557,7 +561,7 @@ section.forma {
     width: 24px;
     margin: 0 auto;
     margin-right: 15px;
-    min-width: 10px;
+    max-width: 10px;
 }
 
 footer{
@@ -567,6 +571,8 @@ footer{
     width: 100%;
     align-items: center;
     border-top: 1px solid #8080801a;
+    top: -10px;
+    position: relative;
 }
 .social-link{
     display:flex;

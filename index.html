@@ -54,17 +54,16 @@
         .whatget-text-row {
           width: 98%;
         }
-        .whatget-text{
+        .whatget-text {
           height: 465px;
         }
-        .mentor-text{
+        .mentor-text {
           padding: 40px;
           height: 100%;
         }
-        .mentor-info{
+        .mentor-info {
           top: 50px;
         }
-
       }
       @media (max-width: 992px) {
         .container {
@@ -105,36 +104,36 @@
         .club-item h1 {
           font-size: 88px;
         }
-        .whatget-content{
+        .whatget-content {
           width: 70%;
         }
-        .whatget-item{
+        .whatget-item {
           font-size: 18px;
         }
         .whatget-text-row {
           width: 100%;
         }
-        .whatget-text{
+        .whatget-text {
           top: 326px;
           height: 431px;
         }
-        .mentor-content{
+        .mentor-content {
           width: 100%;
         }
-        .mentor-info{
+        .mentor-info {
           top: 190px;
           left: 35%;
           min-width: 440px;
         }
-        .mentor-text{
+        .mentor-text {
           padding: 30px;
         }
         .mentor-text p {
           font-weight: 200;
           font-size: 20px;
         }
+        .btnheader{display: none;}
       }
-
 
       @media (max-width: 850px) {
         .club-content {
@@ -167,14 +166,14 @@
           width: 100%;
           top: 221px;
         }
-        section.whatget{
+        section.whatget {
           height: 777px;
         }
-        .whatget-text{
+        .whatget-text {
           top: 300px;
           height: 390px;
         }
-        .whatget-item{
+        .whatget-item {
           font-size: 16px;
           max-width: 180px;
         }
@@ -212,53 +211,95 @@
           top: 165px;
         }
 
-        .whatget-diagram{
+        .whatget-diagram {
           width: 90%;
           top: 100px;
         }
-        .whatget-item{
+        .whatget-item {
           line-height: 18px;
         }
-        .whatget-text{
+        .whatget-text {
           top: 197px;
           height: 350px;
         }
-        .block-title{
+        .block-title {
           width: 100%;
         }
-        section.mentor{
+        section.mentor {
           height: 1033px;
         }
-        .mentor-content{
+        .mentor-content {
           display: flex;
           flex-direction: column;
           height: 780px;
           position: relative;
         }
-        .mentor-photo{
+        .mentor-photo {
           width: 60%;
           left: 9%;
           position: relative;
         }
-        .mentor-info{
+        .mentor-info {
           position: relative;
           left: 15%;
           width: 75%;
           top: -69px;
+          min-width: 440px;
         }
         .mentor-text h2 {
           margin-top: 10px;
         }
-        .mentor-btn{
+        .mentor-btn {
           left: 0;
         }
-        .mentor-str button{
+        .mentor-str button {
           margin-left: 10px;
         }
+        .event-title {
+          width: 76%;
+        }
+        .current {
+          width: 60%;
+        }
+        .pre,
+        .next {
+          width: 14%;
+          height: 60%;
+          top: -75px;
+        }
+        .event-photo button {
+          top: 30%;
+          right: 10%;
+        }
+        .event-photo button.first {
+          left: 10%;
+        }
+        .block-event {
+          top: 180px;
+        }
       }
+
       @media (max-width: 600px) {
-        .whatget-diagram img{
+        .whatget-diagram img {
           opacity: 0.5;
+        }
+        .mentor-info {
+          left: 0;
+          min-width: 320px;
+          width: 85%;
+        }
+        .mentor-photo {
+          width: 80%;
+          left: 9px;
+        }
+        .mentor-text {
+          padding: 25px;
+        }
+        .mentor-btn {
+          margin-left: 0;
+        }
+        section.event {
+          height: 860px;
         }
       }
       @media (max-width: 488px) {
@@ -272,8 +313,32 @@
         .club-item {
           margin: 0px;
         }
+        .current {
+          width: 80%;
+        }
+        .pre,
+        .next {
+          width: 7%;
+          height: 42%;
+          top: -122px;
+        }
+        .event-photo button {
+          right: 3%;
+        }
+        .event-photo button.first {
+          left: 3%;
+        }
+        .event-title {
+          margin: 17px auto 30px;
+        }
+        section.event {
+          height: 780px;
+        }
       }
       @media (max-width: 400px) {
+        .whatget .block-title{
+          top: 0;
+        }
         .club-item h1 {
           font-size: 56px;
         }
@@ -292,14 +357,38 @@
         .club-title-item {
           top: -105px;
         }
-        .whatget-text-row .whatget-item{
-    text-align: right;
-    padding-right: 10px;
+        .whatget-text-row .whatget-item {
+          text-align: right;
+          padding-right: 10px;
         }
         .whatget-text-row .whatget-item:first-child {
-    text-align: left;
-    padding-left: 10px;
-    }
+          text-align: left;
+          padding-left: 10px;
+        }
+        .mentor-info {
+          left: -20px;
+        }
+        .inpformin {
+          min-width: 290px;
+        }
+        section.whatget {
+          height: 560px;
+        }
+        .block-title {
+          top: -24px;
+        }
+        .block-form {
+          margin: -122px auto;
+        }
+        section.forma {
+          height: 586px;
+        }
+        .social-link {
+          display: none;
+        }
+        .event .block-title {
+          top: 50px;
+        }
       }
     </style>
     <title>BRI CLUB</title>
@@ -353,25 +442,29 @@
               <a href="#" class="">МЕРОПРИЯТИЯ</a>
             </li>
           </ul>
-
-          <a class="s-btn" type="button">
-            ВСТУПИТЬ
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              style="width: 20px"
-              class="h-3 w-3"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M14 5l7 7m0 0l-7 7m7-7H3"
-              />
-            </svg>
-          </a>
+          <div class="btnheader">
+            <a class="s-btn" type="button">
+              ВОЙТИ
+            </a>
+            <a class="s-btn" type="button">
+              ВСТУПИТЬ
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                style="width: 20px"
+                class="h-3 w-3"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M14 5l7 7m0 0l-7 7m7-7H3"
+                />
+              </svg>
+            </a>
+          </div>
         </nav>
       </div>
     </header>
@@ -498,7 +591,7 @@
           <h1>Менторы BRI Club</h1>
           <div class="bgtitle">03</div>
         </div>
-        <div class=" mentor-content">
+        <div class="mentor-content">
           <div class="mentor-photo">
             <img src="/img/mentor1.png" alt="" />
           </div>
@@ -594,11 +687,11 @@
         <div class="form-content">
           <p>Вы в одном шаге от успеха</p>
           <div class="form-in">
-            <input type="text" placeholder="Имя Фамилия*" />
-            <input type="text" placeholder="Ваш телефон*" />
-            <input type="text" placeholder="Ваш E-mail" />
+            <input class="inpformin" type="text" placeholder="Имя Фамилия*" />
+            <input class="inpformin" type="text" placeholder="Ваш телефон*" />
+            <input class="inpformin" type="text" placeholder="Ваш E-mail" />
             <div class="iagree">
-              <input type="checkbox" checked />
+              <input type="checkbox" checked style="max-width: 10px" />
               Я согласен(a) на обработку персональных данных
             </div>
             <a class="s-btn btn-home" type="button"> ОТПРАВИТЬ </a>
