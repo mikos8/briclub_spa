@@ -618,7 +618,7 @@
         </div>
         <div class="mentor-content">
           <div class="mentor-photo">
-            <img src="/img/mentor1.png" alt="" />
+            <img class="mentor-img" src="/img/mentor1.png" alt="" />
           </div>
           <div class="mentor-info">
             <div class="mentor-text">
@@ -636,7 +636,7 @@
                 <button>3</button>
               </div>
               <div class="mentor-str">
-                <button>
+                <button class="btnPrevPhoto">
                   <svg
                     style="width: 25px; height: 25px"
                     xmlns="http://www.w3.org/2000/svg"
@@ -653,7 +653,7 @@
                     />
                   </svg>
                 </button>
-                <button>
+                <button class="btnNextPhoto">
                   <svg
                     style="width: 25px; height: 25px"
                     xmlns="http://www.w3.org/2000/svg"
@@ -758,10 +758,11 @@
     </footer>
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script>
+      // MenuBurger
       let btnOpenMenu = document.querySelector('.openbtn');
       let btnCloseMenu = document.querySelector('.closebtn');
       let burgerMenu = document.querySelector('.burgermenu');
-      let menuLink = document.querySelectorAll('.menu-link')
+      let menuLink = document.querySelectorAll('.menu-link');
 
       function closeMenu(){
         burgerMenu.style.display = 'none'
@@ -780,8 +781,27 @@
       })
       btnCloseMenu.addEventListener('click',closeMenu)
 
-      
+      //Mentor 
+      let listImgMentor = ['/img/mentor1.png','/img/mentor2.png','/img/mentor3.png']
+      let listTextMentor = ['/img/mentor1.png','/img/mentor2.png','/img/mentor3.png']
+      let btnNextPhoto = document.querySelector('.btnNextPhoto');
+      let btnPrevPhoto = document.querySelector('.btnPrevPhoto');
+      let mentorPhoto = document.querySelector('.mentor-img')
+      let photoDiv = document.querySelector('.mentor-photo')
+      let count = 0;
+      btnNextPhoto.addEventListener('click',()=>{
+        if(count == listImgMentor.length-1){
+          count = 0;
+        }else{count++}
+        photoDiv.innerHTML = `<img class="mentor-img" src="${listImgMentor[count]}" alt="" />`
+      })
 
+      btnPrevPhoto.addEventListener('click',()=>{
+        if(count == 0){
+          count = listImgMentor.length-1;
+        }else{count--}
+        photoDiv.innerHTML = `<img class="mentor-img" src="${listImgMentor[count]}" alt="" />`
+      })
 
     </script>
   </body>
